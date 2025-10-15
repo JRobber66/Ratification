@@ -10,7 +10,7 @@ const DATA_PATH = path.join(__dirname, 'data.json');
 
 function bootstrapData() {
   if (!fs.existsSync(DATA_PATH)) {
-    const initial = { members: ["Alice A","Bob B","Charlie C"], candidates: [] };
+    const initial = { members: ["Arnoldo","Daniel","David","Callen","William"], candidates: [] };
     fs.writeFileSync(DATA_PATH, JSON.stringify(initial, null, 2));
   }
 }
